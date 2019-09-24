@@ -1,0 +1,94 @@
+/***** Setup ******/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    color: white;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+.timer__app {
+    display: flex;
+    flex-flow: column wrap;
+    /*
+    flex-direction: column;
+    flex-wrap: wrap;
+    */
+    flex-basis: 1 1 500px;
+    /*
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+    */
+}
+
+/***** Header *****/
+
+.timer__header {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+.timer_controls {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 200px;
+}
+.timer__title {
+    font-style: italic;
+    font-size: 50px;
+    padding: 2rem;
+}
+.timer__input {
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.timer__start {
+    
+    background: black;
+    margin: 8px 0 0 5px;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+/***** Main *****/
+
+.timer__countdown {
+    display: flex;
+    margin-top: 8rem;
+    padding: 2rem;
+    justify-content: space-around;
+    font-size: 100px;
+    flex-wrap: wrap;
+}
+.box {
+    flex: 0 0 200px;
+    height: 200px;
+    text-align: center;
+    padding: 2rem;
+    border: 5px dashed white;
+    transition: transform 3s;
+}
+.rotate {
+    transform: rotate(0.125turn);
+}
+
+/***** Footer *****/
+.timer__footer {
+    display: flex;
+    padding: 3rem;
+    font-size: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.timer__labels {
+    flex: 1 0 500px;
+}

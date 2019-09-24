@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer__app">
+            <header class="timer__header">
+                <h1 class="timer__title">Count Down</h1>
+                <div class="timer__controls">
+                    <input class="timer__input" type="datetime-local" step="1">
+                    <button class="timer__start">Start</button>
+                </div>
+            </header>
+            <main class="timer__countdown">
+                <div class="timer__days box">07</div>
+                <div class="timer__hours box">5</div>
+                <div class="timer__mins box">45</div>
+                <div class="timer__secs box">7</div>
+            </main>
+            <footer class="timer__footer">
+                <span class="timer__label">Days</span>
+                <span class="timer__label">Hours</span>
+                <span class="timer__label">Minutes</span>
+                <span class="timer__label">Seconds</span>
+            </footer>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
